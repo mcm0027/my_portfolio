@@ -41,7 +41,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: rgba(230, 126, 34, 0.8);
+  border-color: rgba(0, 120, 178, 0.8);
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -98,10 +98,11 @@ h4 {
   margin-bottom: 10px;
 }
 a {
-  color: #e67e22;
+  color: #00ACFF;
 }
 a:hover {
-  color: #924d10;
+  color: #0078B2;
+  text-decoration: none;
 }
 /*--------------------------------------------------------------------------
 +	Skills Style
@@ -671,7 +672,7 @@ a:hover {
   background: #222;
   color: #A0A0A0;
   padding: 0 20px 10px 20px;
-  border-top: 4px solid #e67e22;
+  border-top: 4px solid #0078B2;
   margin-top: 20px;
   -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
   -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
@@ -709,14 +710,14 @@ a:hover {
   opacity: 1;
 }
 .footer-stay-connected a.github {
-  background-image: url(/img/logos/Github-white.png);
+  background-image: url(../img/logos/Github-white.png);
   background-size: cover;
   height:70px;
   margin-bottom: .5em;
 }
 
 .footer-stay-connected a.linkedin {
-  background-image: url(/img/logos/linkedin.png);
+  background-image: url(../img/logos/linkedin.png);
   background-size: cover;
   height:70px;
 }
@@ -1485,7 +1486,7 @@ a:hover {
 +	Buttons Style
 --------------------------------------------------------------------------*/
 .btn {
-  border: 1px solid #e67e22;
+  border: 1px solid #B26200;
   -webkit-border-radius: 2px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 2px;
@@ -1502,7 +1503,7 @@ a:hover {
   -ms-transition: all .25s ease;
   transition: all .25s ease;
   text-align: center;
-  background: none repeat scroll 0 0 #e67e22;
+  background: none repeat scroll 0 0 #FF8C00;
   text-shadow: none;
   box-shadow: none;
   color: #FFF;
@@ -1547,9 +1548,9 @@ a:hover {
   border: 1px solid #3b3c41;
 }
 .btn-orange {
-  border: 1px solid #cc5a00;
+  border: 1px solid #B26200;
   color: #FFF;
-  background: none repeat scroll 0 0 #FF7000;
+  background: none repeat scroll 0 0 #FF8C00;
 }
 .btn-orange:hover {
   background: none repeat scroll 0 0 #3b3c41;
