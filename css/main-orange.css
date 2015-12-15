@@ -104,10 +104,10 @@ a:hover {
   color: #924d10;
 }
 /*--------------------------------------------------------------------------
-+	Services Style
++	Skills Style
 --------------------------------------------------------------------------*/
 /* Multicolumn */
-.service-wrapper {
+.skills-wrapper {
   background: #FFF;
   margin: 20px 10px;
   text-align: center;
@@ -123,25 +123,29 @@ a:hover {
   box-shadow: 0 0 3px #999;
   color: 0 0 3px #999;
 }
-.service-wrapper h3 {
+
+.skills-wrapper img {
+  width: 100px;
+}
+.skills-wrapper h3 {
   font-size: 1.2em;
   margin: 10px 0 !important;
 }
-.service-wrapper p {
+.skills-wrapper p {
   margin-top: 0;
 }
 /* Row */
-.service-wrapper-row {
+.skills-wrapper-row {
   padding: 10px 0;
 }
-.service-wrapper-row h3 {
+.skills-wrapper-row h3 {
   padding-top: 15px;
 }
-.service-wrapper-row .service-image {
+.skills-wrapper-row .skills-image {
   padding-top: 15px;
   text-align: center;
 }
-.service-wrapper-row .service-image img {
+.skills-wrapper-row .skills-image img {
   max-width: 80%;
   vertical-align: bottom;
   bottom: 0;
