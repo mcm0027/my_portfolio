@@ -121,7 +121,7 @@ a:hover {
   background-clip: padding-box;
   -webkit-box-shadow: 0 0 3px #999;
   -moz-box-shadow: 0 0 3px #999;
-  box-shadow: 0 0 3px #999;
+  box-shadow: 2px 2px 3px #444;
   color: 0 0 3px #999;
 }
 
@@ -161,6 +161,12 @@ a:hover {
   -moz-box-shadow: 0 0 8px #999;
   box-shadow: 0 0 8px #999;
   color: 0 0 8px #999;
+}
+
+.skills-heading,
+h3 {
+  text-shadow: 2px 2px 3px #444;
+  color: #333;
 }
 
 
@@ -213,6 +219,28 @@ a:hover {
 }
 
 /*--------------------------------------------------------------------------
++	Animation Style
+--------------------------------------------------------------------------*/
+.animation-home {
+  margin: 2em;
+  padding: 2em;
+}
+.animation {
+  width: 25em;
+}
+
+.animation.open-add {
+  transition: padding 350ms linear;
+}
+
+.animation.open-add-active,
+.animation.open {
+  padding-left: 250px;
+}
+
+
+
+/*--------------------------------------------------------------------------
 +	Portfolio Style
 --------------------------------------------------------------------------*/
 .portfolio-item {
@@ -240,6 +268,8 @@ a:hover {
   overflow: hidden;
   text-align: center;
   position: relative;
+  border: 1px solid #ddd;
+  border-radius: .3em .3em 0 0;
 }
 .portfolio-item .portfolio-image img {
   max-width: 100%;
@@ -248,6 +278,7 @@ a:hover {
   -o-transition: all .25s ease;
   -ms-transition: all .25s ease;
   transition: all .25s ease;
+  border-radius: .3em .3em 0 0;
 }
 .portfolio-item:hover {
   border: 8px solid #0078B2;
@@ -488,6 +519,11 @@ a:hover {
 /*--------------------------------------------------------------------------
 +	Homepage Slider Style (modified sequencejs CSS). Sorry, no LESS here
 --------------------------------------------------------------------------*/
+
+#slide-image {
+  background-size: cover;
+  width: 100%;
+}
 #sequence {
   overflow: hidden;
   width: 100%;
@@ -532,6 +568,10 @@ a:hover {
   transition-property: background;
   background-position: -50px 0;
 }
+
+#sequence > #testimonial > li {
+  background-position: 0 0;
+}
 #sequence > .sequence-canvas > li.bg1 {
   background-image: url(../img/homepage-slider/slider-bg1.jpg);
 }
@@ -557,59 +597,64 @@ a:hover {
   background-image: url(../img/homepage-slider/slider-bg8.jpg);
 }
 #sequence > .sequence-canvas > li.bg9 {
-  background-image: url(../img/homepage-slider/slider-bg9.jpg);
+  background-image: url(../img/homepage-slider/space-desk-laptop-notebook2.jpg);
 }
 #sequence > .sequence-canvas > li.bg10 {
   background-image: url(../img/homepage-slider/slider-bg10.jpg);
 }
 #sequence > .sequence-canvas > li.bg11 {
-  background-image: url(../img/homepage-slider/slider-bg11.jpg);
+  background-image: url(../img/homepage-slider/nature15.JPG);
 }
 #sequence > .sequence-canvas > li.bg12 {
-  background-image: url(../img/homepage-slider/slider-bg12.jpg);
+  background-image: url(../img/homepage-slider/nature14.jpg);
 }
 #sequence > .sequence-canvas > li.bg13 {
-  background-image: url(../img/homepage-slider/slider-bg13.jpg);
+  background-image: url(../img/homepage-slider/nature13.jpg);
 }
 #sequence > .sequence-canvas > li.bg14 {
-  background-image: url(../img/homepage-slider/slider-bg14.jpg);
+  background-image: url(../img/homepage-slider/nature12.jpg);
 }
 #sequence > .sequence-canvas > li.bg15 {
-  background-image: url(../img/homepage-slider/slider-bg15.jpg);
+  background-image: url(../img/homepage-slider/nature11.jpg);
 }
 #sequence > .sequence-canvas > li.bg16 {
-  background-image: url(../img/homepage-slider/slider-bg16.jpg);
+  background-image: url(../img/homepage-slider/nature10.jpg);
 }
 #sequence > .sequence-canvas > li.bg17 {
-  background-image: url(../img/homepage-slider/beach3.png);
+  background-image: url(../img/homepage-slider/nature9.jpg);
 }
 #sequence > .sequence-canvas > li.bg18 {
-  background-image: url(../img/homepage-slider/beach2.png);
+  background-image: url(../img/homepage-slider/nature8.jpg);
 }
 #sequence > .sequence-canvas > li.bg19 {
-  background-image: url(../img/homepage-slider/beach1.png);
+  background-image: url(../img/homepage-slider/nature7.jpg);
 }
 #sequence > .sequence-canvas > li.bg20 {
-  background-image: url(../img/homepage-slider/green_log.png);
+  background-image: url(../img/homepage-slider/nature6.jpg);
 }
 #sequence > .sequence-canvas > li.bg21 {
-  background-image: url(../img/homepage-slider/green_log2.png);
+  background-image: url(../img/homepage-slider/nature5.jpg);
 }
 #sequence > .sequence-canvas > li.bg22 {
-  background-image: url(../img/homepage-slider/green_log3.png);
+  background-image: url(../img/homepage-slider/nature4.jpg);
 }
 #sequence > .sequence-canvas > li.bg23 {
-  background-image: url(../img/homepage-slider/blue_black.png);
+  background-image: url(../img/homepage-slider/nature3.jpg);
 }
 #sequence > .sequence-canvas > li.bg24 {
-  background-image: url(../img/homepage-slider/brown.jpg);
+  background-image: url(../img/homepage-slider/nature2.jpg);
 }
 #sequence > .sequence-canvas > li.bg25 {
-  background-image: url(../img/homepage-slider/shadow.jpg);
+  background-image: url(../img/homepage-slider/nature1.jpg);
+}
+#sequence > .sequence-canvas > li.bg26 {
+  background-image: url(../img/project_screenshots/laptop_bird.jpg);
+  background-size: cover;
 }
 #sequence > .sequence-canvas > li img {
   height: 96%;
 }
+
 #sequence > .sequence-canvas li > * {
   position: absolute;
   -webkit-transition-property: left, opacity;
@@ -618,6 +663,8 @@ a:hover {
   -ms-transition-property: left, opacity;
   transition-property: left, opacity;
 }
+
+
 .sequence-next,
 .sequence-prev {
   color: white;
@@ -642,12 +689,14 @@ a:hover {
   -moz-opacity: 0.3;
   opacity: 0.3;
 }
+
 .sequence-prev {
   left: 3%;
 }
 .sequence-next {
   right: 3%;
 }
+
 .sequence-prev img,
 .sequence-next img {
   height: 100%;
@@ -793,11 +842,13 @@ a:hover {
   box-shadow: 2px 2px 3px #444;
   -webkit-opacity: 0;
   -moz-opacity: 0;
+  border-radius: 1em;
+  border: 1px solid #666;
   opacity: 0;
   position: relative;
   height: auto !important;
   max-height: 450px !important;
-  max-width: 45% !important;
+  max-width: 30% !important;
 }
 .animate-in .slide-img {
   left: 55%;
@@ -822,6 +873,14 @@ a:hover {
 @media only screen and (min-width: 992px) {
   #sequence .title {
     width: 42%;
+  }
+  #testimonial .title {
+    width: 70%;
+    text-align: center;
+  }
+  #testimonial .subtitle {
+    width: 70%;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 838px) {
@@ -874,6 +933,10 @@ a:hover {
     margin-bottom: 0;
     z-index: 10;
   }
+  
+  #testimonial .title {
+    bottom:55%;
+  }
   #sequence .animate-in .title {
     left: 0%;
   }
@@ -882,6 +945,9 @@ a:hover {
   }
   #sequence .subtitle {
     visibility: hidden;
+  }
+  #testimonial .subtitle {
+    visibility: visible;
   }
 }
 /*--------------------------------------------------------------------------
@@ -1036,7 +1102,7 @@ a:hover {
 +	Buttons Style
 --------------------------------------------------------------------------*/
 .btn {
-  border: 1px solid #B26200;
+/*  border: 1px solid #fff;*/
   -webkit-border-radius: 2px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 2px;
@@ -1055,7 +1121,7 @@ a:hover {
   text-align: center;
   background: none repeat scroll 0 0 #08AEFE;
   text-shadow: none;
-  box-shadow: none;
+  box-shadow: 2px 2px 3px #444;
   color: #FFF;
   white-space: nowrap;
 }
@@ -1136,4 +1202,8 @@ a:hover {
 }
 .dropdown.open a.dropdown-toggle .caret {
   border-top: 4px solid #FFF;
+}
+
+.skills-heading {
+  
 }

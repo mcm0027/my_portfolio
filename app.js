@@ -1,4 +1,5 @@
-var myApp = angular.module("myApp", ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'sequence', 'owl']);
+
+var myApp = angular.module("myApp", ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'sequence', 'AppAnimations']);
 
 myApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
@@ -10,7 +11,6 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     templateUrl: 'views/skills.html',
     controller: 'skillController'
   })
-
     .when ('/portfolio', {
     templateUrl: 'views/portfolio.html',
     controller: 'portfolioController'
@@ -40,15 +40,14 @@ myApp.directive('sliderElement', function() {
 });
 
 myApp.controller('CarouselDemoCtrl', function ($scope) {
-  $scope.myInterval = 5000;
+  $scope.myInterval = 0;
   $scope.noWrapSlides = false;
   var slides = $scope.slides = [];
   $scope.addSlide = function() {
     var newWidth = 600 + slides.length + 1;
     slides.push({
-      image: '//placekitten.com/' + newWidth + '/300',
-      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-      ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+      image:['./img/project_screenshots/laptop_tablet_bird2.jpg', './img/homepage-slider/Instagram_slide.jpg', './img/homepage-slider/nature3.jpg', './img/homepage-slider/nature6.jpg'] [slides.length % 4],
+      text: [][slides.length % 4]
     });
   };
   for (var i=0; i<4; i++) {
