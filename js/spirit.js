@@ -1,9 +1,7 @@
-
 function main() {
 
   (function () {
     'use strict';
-    
  /*=============================================
       Testimonial Slider
         =============================================== */ 
@@ -21,12 +19,11 @@ function main() {
         }
       });
     
-    
 /*====================================
     Show Menu on Book
     ======================================*/
 $(window).bind('scroll', function() {
-  var navHeight = $(window).height() - 600;
+  var navHeight =100;
   if ($(window).scrollTop() > navHeight) {
     $('.navbar-default').addClass('on');
   } else {
@@ -34,14 +31,12 @@ $(window).bind('scroll', function() {
   }
 });
 
-
 $('body').scrollspy({ 
   target: '.navbar-default',
   offset: 80
 });
-
+    
 }());
-
 
 }
 main();

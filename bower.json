@@ -1,0 +1,18 @@
+{
+  "name": "mPurpose-master",
+  "authors": [
+    "Matt Morris <mcm0027@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

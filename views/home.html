@@ -1,70 +1,68 @@
-<canvas id="main-canvas"></canvas>
-<div class="heading">
-  <h1>Hi, I'm Matt... Blah blah blah</h1>
-</div>
-<div>
-  <h2>Next Section:</h2>
-</div>
-
-
 <!-- Top Border -->
 <div class="section section-breadcrumbs">
   <div class="container">
-
   </div>
 </div>
- 
+
 <!-- Bootstrap Portfolio Carousel-->
- <div ng-controller="CarouselDemoCtrl">
-  <div style="max-height: 800px">
-    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-      <uib-slide ng-repeat="slide in slides" active="slide.active">
+<div class="carousel-container">
+  <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+    <uib-slide ng-repeat="slide in slides" active="slide.active">
+      <a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000" ng-click="setId(slide.id)">
         <img id="slide-image" ng-src="{{slide.image}}" style="margin:auto;">
         <div class="carousel-caption">
           <h4>{{slide.title}}</h4>
           <p>{{slide.text}}</p>
         </div>
-      </uib-slide>
-    </uib-carousel>
-  </div>
+      </a>
+    </uib-slide>
+  </uib-carousel>
 </div>
 
 <!-- Skills -->
-<div class="section">
+<div class="section" id="skills">
   <div class="container">
     <div class="row">
       <h2 class="skills-heading">My Skills</h2>
       <hr>
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
-          <img src="img/logos/css3-logo-min.png" alt="skills 1">
-          <h3>CSS3, Bootstrap, &amp; SASS</h3>
-          <p>Ability to create responsive and attractive websites from scratch or with the help of Bootstrap templates and styling options to add professional aesthetics quickly. </p>
-          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>
+          <img src="img/logos/css3-logo-min-shadow.png" alt="skills 1">
+          <div class="skills-text">
+            <h3>CSS3, Bootstrap, &amp; SASS</h3>
+            <p>Ability to create responsive and attractive websites from scratch or with the help of Bootstrap templates and styling options to add professional aesthetics quickly. </p>
+          </div>
+<!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
-          <img src="img/logos/angular-js-min.png" alt="skills 2">
-          <h3>Javascript &amp; JS Frameworks</h3>
-          <p>Experience and understanding of Javascript, Angular, and JQuery, as well as how to take advantage of them to integrate APIs and enhance usibility.</p>
-          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>
+          <img src="img/logos/angular-js-min-shadow.png" alt="skills 2">
+          <div class="skills-text">
+            <h3>Javascript &amp; JS Frameworks</h3>
+            <p>Experience and understanding of Javascript, Angular, and JQuery, as well as how to take advantage of them to integrate APIs and enhance usibility.</p>
+          </div>
+<!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
-          <img src="img/logos/HTML5_logo-min.png" alt="skills 3">
-          <h3>HTML &amp; HTML5</h3>
-          <p>Mastery of the unique challenges and opportunities that HTML5 has to offer to create readable, semantic code which graceful transitions backward in older browsers.</p>
-          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>
+          <img src="img/logos/HTML5_logo-min-shadow.png" alt="skills 3">
+          <div class="skills-text">
+            <h3>HTML &amp; HTML5</h3>
+            <p>Mastery of the unique challenges and opportunities that HTML5 has to offer to create readable, semantic code which graceful transitions backward in older browsers.</p>
+          </div>
+<!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
-          <img src="img/logos/Git_icon.svg-min.png" alt="skills 3">
-          <h3>Version Control &amp; Testing</h3>
-          <p>Well versed in using Git/Github to as well as Protractor end to end and Karma unit testing to provide protection and documentation for projects.</p>
-          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>
+          <img src="img/logos/Git_icon.svg-min-shadow.png" alt="skills 3">
+          <div class="skills-text">
+            <h3>Version Control &amp; Testing</h3>
+            <p>Well versed in using Git/Github to as well as Protractor end to end and Karma unit testing to provide protection and documentation for projects.</p>
+          </div>
+<!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
         </div>
       </div>
     </div>
@@ -72,11 +70,54 @@
 </div>
 <!-- End skills -->
 
+<div class="section portfolio-section">
+  <div class="container-fluid">
+   <div class="row filter-container">
+     <div class="col-md-12" id="portfolio">
+        <h2>Portfolio</h2>
+        <h3>Select a project type to filter the view.</h3>
+      </div>
+      <div class="clearfix"></div>
+      <ul class="filter">
 
+        <li class="col-md-2 col-md-offset-1"><a href="" ng-click="filter = 'all'"><i class="fa fa-circle-o"></i>  All</a></li>
+        <li class="col-md-2"><a href="" ng-click="filter = 'CSS'"><i class="fa fa-pencil"></i>  CSS</a></li>
+        <li class="col-md-2"><a href="" ng-click="filter = 'API'"><i class="fa fa-server"></i>  APIs</a></li>
+        <li class="col-md-2"><a href="" ng-click="filter = 'data'"><i class="fa fa-database"></i>  Data Manipulation</a></li>
+        <li class="col-md-2"><a href="" ng-click="filter = 'JS'"><i class="fa fa-coffee"></i>  JavaScript</a></li>
+        <div class="clearfix"></div>
+      </ul>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <ul class="portfolio-list">
+        <li ng-repeat="project in projects">
+          <!-- Item 1 -->
+          <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col-md-4 col-sm-6 animate-filter">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <a ng-click="paths.set()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+              </div>
+              <div class="portfolio-info">
+                <ul>
+                  <li class="portfolio-project-name">{{project.title}}</li>
+                  <li>{{project.shortTech}}</li>
+              <li class="read-more"><a ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <!-- Testimonials-->
 <!-- Homepage Slider -->
-<div class="homepage-slider">
+<div class="homepage-slider" id="recs">
   <sequence id="sequence" pages="true" auto-play="true" animate-starting-frame-in="true">
     <ul class="sequence-canvas" id="testimonial">
       <!-- Slide 1 -->
@@ -114,3 +155,12 @@
   </sequence>
 </div>
 <!-- End Homepage Slider -->
+<div ng-controller="canvasController" id="about">
+  <canvas id="main-canvas"></canvas>
+  <div class="heading" id="canvas-text">
+    <h2>Front-end Developer</h2>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos debitis iusto, iure, voluptates vitae eaque recusandae sint. Quaerat dignissimos, ipsa sapiente fugiat iusto est officiis quia! Beatae, neque! Quod, enim.</h4>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos debitis iusto, iure, voluptates vitae eaque recusandae sint. Quaerat dignissimos, ipsa sapiente fugiat iusto est officiis quia! Beatae, neque! Quod, enim.</h4>
+    <img class="splash-img" src="img/profile_picture.jpg">
+  </div>
+</div>
