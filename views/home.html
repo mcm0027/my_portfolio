@@ -98,13 +98,13 @@
           <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col-md-4 col-sm-6 animate-filter">
             <div class="portfolio-item">
               <div class="portfolio-image">
-                <a ng-click="paths.set()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+                <a ng-click="paths()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
               </div>
               <div class="portfolio-info">
                 <ul>
-                  <li class="portfolio-project-name">{{project.title}}</li>
+                  <li class="portfolio-project-name"><strong>{{project.title}}</strong></li>
                   <li>{{project.shortTech}}</li>
-              <li class="read-more"><a ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
+                  <li class="read-more"><a ng-click="paths()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
                 </ul>
               </div>
             </div>

@@ -39,17 +39,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#/"><span class="first-name">Matt</span> <span class="last-name"> Morris</span></a>
+        <a ng-click="home()" class="navbar-brand" href="#/"><strong><span class="first-name">Matt</span> <span class="last-name"> Morris</span></strong></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="home">
         <ul class="nav navbar-nav navbar-right">
-          <li ng-hide='location === "/"'><a href="#/">Home</a></li>
-          <li ng-hide='location !== "/"'><a href="" smooth-scroll-jquery target="skills" offset="30" speed="1000">Skills</a></li>
-          <li><a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000">Portfilio</a></li>
-          <li><a href="" smooth-scroll-jquery target="recs" offset="30" speed="1000">Recommendations</a></li>
-          <li><a href="" smooth-scroll-jquery target="about" offset="55" speed="1000">About Me</a></li>
+          <li class="main-link" ng-click="home()"><a href="#/">Home</a></li>
+          <li  class="home-links"><a href="" smooth-scroll-jquery target="skills" offset="30" speed="1000">Skills</a></li>
+          <li class="home-links"><a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000">Portfilio</a></li>
+          <li class="home-links"><a href="" smooth-scroll-jquery target="recs" offset="30" speed="1000">Recommendations</a></li>
+          <li class="home-links"><a href="" smooth-scroll-jquery target="about" offset="55" speed="1000">About Me</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
