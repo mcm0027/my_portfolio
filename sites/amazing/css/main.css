@@ -1,0 +1,735 @@
+/******************
+web fonts
+******/
+@font-face {
+    font-family: 'Abolition Regular';
+      src: url('../fonts/abolition-regular-webfont.eot');
+      src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/abolition-regular-webfont.woff') format('woff'),
+          url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+/*************
+General
+************/
+.container-fluid {
+	padding: 0;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+div {
+	width:100%;
+}
+
+nav {
+	width: 100%;
+}
+
+.row {
+	margin: 0;
+}
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+ 	padding: 0;
+ }
+/************
+Header
+**********/
+#logo h1 {
+	text-align: center;
+	margin: 5px 0 0 0;
+	font-size: 4em;
+	text-shadow: 4px 4px 5px rgba(40, 40, 40, 0.89);
+	color: #eee;
+	top:-20px;
+	z-index: 1000;
+}
+
+nav {
+	text-align: center;
+	font-size: 1.5em;
+	text-shadow: 4px 4px 5px rgba(40, 40, 40, 0.89);
+	box-sizing: border-box;
+} 
+
+nav a {
+	color: #eee;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 6px;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*nav links*/
+nav a, nav a:visited {
+  color: #eee;
+}
+/*selected nav link*/
+nav a.selected, nav a:hover {
+ color:#333; 
+}
+
+header {
+	padding: 0;
+	margin-bottom: 10px;
+	background-image: url('../img/purty_wood/purty_wood_@2X.png');
+  	background-size: 20%;
+  	position: relative;
+ 	top: 0px;
+ 	z-index: 1;
+ 	font-family: 'Playball', 'Helvetica', sans-serif;
+ 	width: 100%;
+ }
+
+/**********
+Sticky Header
+****************/
+
+.is-sticky header {
+  background-color: #B7C6CB;
+  background-image: none;
+  height: 50px;
+}
+
+.is-sticky #logo h1 {
+  font-size: 2.8em;
+  color: #2D444C;
+}
+
+.is-sticky .headtab li a{
+  font-size: 1.2em;
+  color: #eee;
+  padding: 12px;
+  position: relative;
+}
+
+.is-sticky nav a.selected, .is-sticky nav a:hover {
+  color: #333;
+}
+
+.is-sticky nav ul {
+  padding: 1px 0 0 0;
+}
+
+ /*****************
+ Home body
+ ***************/
+.backgroundimgHome {
+	top: 200px;
+ 	background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+   	background-image: url('../img/arbor1.jpg');
+}
+
+#tag {
+  margin: 55px 0 40px 0;
+}
+
+#tag h1,
+#tag h2 {
+  font-family: 'Playball', serif;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .1em;
+  font-style: normal;
+  text-shadow: 2px 2px #444;
+  }
+
+#tag h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+#tag h2 {
+	font-size: 1.5em;
+	margin-top: 5px;
+}
+
+/***********************
+home slides
+********************/
+
+.slides {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.slide {
+  text-align: center;
+  height: 100%;
+  margin-bottom: 2.5%;
+  margin-top: 0%;
+  padding: 1% 0;
+  border-top: 6px double #222;
+  border-bottom: 6px double #222;
+  display: inline-block;
+}
+
+.slidetext {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.slide img {
+  width: 70%;
+  margin: 5% 15% 5% 15%;
+  border: 4px solid #222;
+  border-radius: 10px;
+}
+
+.slide h2 {
+  font-size: 2em;
+  margin-top: 5%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #bbb;
+  width:75%;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  color: #eee;
+}
+
+.slide p {
+  font-size: 1.6em;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: #999;
+}
+
+.button {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 2px solid #eee;
+  font-size: 1.5em;
+  color: #eee;
+}
+
+/****************
+footer
+****************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  bottom: -70px;
+  width: 100%;
+  color: #ccc;
+  background-color: #333;
+  border-top: 6px double #333;
+  clear: both;
+  position: absolute;
+}
+
+footer p {
+  margin: 3px;
+}
+
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 0;
+}
+
+/****************
+contact page
+******************/
+
+/*****************
+cta
+*******************/
+
+.cta {
+  display: inline-block;
+  float:left;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  padding: 1% 0;
+  border-bottom: 6px double #222;
+  border-top: 6px double #222;
+}
+
+.cta h1,
+.cta h2 {
+  text-align: center;
+  color: #eee;
+}
+
+.cta h2 {
+  font-size: 3em;
+  padding-top: 1%;
+}
+
+.cta h1 {
+  font-size: 3.5em;
+  padding-bottom: 1%;
+}
+
+/*****************
+contact copy
+*****************/
+
+.contactcopy {
+  float: left;
+  display: inline-block;
+  color: #333;
+  margin: 10px 6% 10px 10.33333%;
+  background-color: #eee;
+  padding: 20px 20px 20px 20px;
+  border:4px solid #222;
+  border-radius: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contactcopy p {
+  font-size: 1.8em;
+}
+
+.contactcopy h3 {
+  font-size: 1.9em;
+  line-height: 1.4;
+}
+
+.icon-contact {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  text-align: right;
+  background-image: url('../img/facebook-wrap.png');
+  background-position: 100% 50%;
+  font-size: 1.7em;
+}
+
+#contactContent {
+	padding-bottom: 2.5%;
+}
+
+/******************
+form styles
+*****************/
+#formpage body {
+  color: #333;
+}
+
+
+#formpage form {
+  margin: 10px 10.33333% 10px 6%;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border: 4px solid #222;
+  border-radius: 15px;
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+#formpage h1 {
+  margin: 0 0 20px 0;
+  color: #444;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+#formpage input[type="text"],
+#formpage input[type="password"],
+#formpage input[type="date"],
+#formpage input[type="datetime"],
+#formpage input[type="email"],
+#formpage input[type="number"],
+#formpage input[type="search"],
+#formpage input[type="tel"],
+#formpage input[type="time"],
+#formpage input[type="url"],
+#formpage textarea,
+#formpage select {
+  background: rgba(255,255,255,0.1);
+  font-size: 16px;
+  height: auto;
+  margin: 0 2% 10px 2%;
+  outline: 0;
+  padding: 8px;
+  width: 96%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1) inset;
+}
+
+#formpage input[type="radio"],
+#formpage input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+#formpage select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+#formpage button {
+  padding: 3% 2%;
+  color: #FFF;
+  background-color: #2E3D47;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 10px;
+  width: 96%;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin: 10px 2%;
+  display: inline-block;
+}
+
+
+#formpage fieldset {
+  margin-bottom: 30px;
+}
+
+#formpage legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+#formpage label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  padding-left: 2%;
+  text-align: left;
+}
+
+#formpage label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+
+#formpage .number {
+  background-color: #5fcf80;
+  color: #333;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+/****************
+gallery page
+********************/
+#galleryTitle {
+  text-align: center;
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 30px;
+  display: inline-block;
+  float: left;
+  color: #eee;
+}
+
+#galleryTitle h1 {
+	margin: 30px 0;
+	font-size: 3.5em;
+	font-weight: bold;
+	letter-spacing: .2em;
+	font-style: italic;
+  	font-family: 'Playfair Display', 'Helvetica', serif;
+  	text-shadow: 4px 4px 5px rgba(40, 40, 40, 0.89);
+}
+
+#gallerybannerimg {
+  margin: 3% 0;
+}
+
+.gallery_copy p {
+  color: #eee;
+  padding: 10px 15px;
+  line-height: 1.5;
+  font-size: 1.2vw;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
+  .gallery_copy p {
+    font-size: 25px;
+    margin: 0 4%;
+  }
+}
+
+.gallery_copy {
+  margin: 4% 0;
+}
+
+#gallery li {
+  width: 44.5%;
+  display: inline-block;
+  margin: 2.5% 4% 2.5% 1%;
+  box-sizing: border-box;
+}
+
+#gallery img {
+  float: left;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+  border-radius: 30px;
+  border: 4px solid #222;
+  display: block;
+}
+
+.chocolat-content .chocolat-img {
+  border: 4px solid #222;
+  border-radius: 30px;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+  font-size: 16px;
+}
+/******************
+materials page
+*****************/
+
+.backgroundimgMat {
+  min-height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/closeup_rockssm.jpg');
+}
+
+.backgroundimgMat2 {
+  min-height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/rockssm.jpg');
+}
+
+.backgroundimgMat3 {
+  min-height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/forestsm.jpg');
+ }
+
+.matslide1 {
+  margin-top: 100px;
+}
+
+.matslide1 img,
+.matslide2 img,
+.matslide3 img {
+  margin: 15%;
+  width: 70%;
+}
+
+.matslide1 h2,
+.matslide2 h2,
+.matslide3 h2 {
+  padding: 0 5%;
+} 
+
+.matslide1 p,
+.matslide2 p,
+.matslide3 p {
+  padding: 3% 5% 0 5%;
+  margin-bottom: 0
+} 
+
+.matTag {
+  padding:10% 50% 10%
+  5%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.matTag2 {
+  padding: 10% 5% 10% 50%;
+}
+
+.matTag3 {
+  padding: 10% 30%;
+}
+
+.matTag h1,
+.matTag h2 {
+  font-size: 280%;
+  line-height: 1.3;
+  color: #eee;
+}
+
+.matTag2 h1,
+.matTag2 h2 {
+  color: #2D444C;
+}
+
+.matTag3 h1,
+.matTag3 h2 {
+  color: #ddd;
+}
+
+.matTag h2 {
+  font-size: 200%;
+  font-family: 'Abolition Regular', 'Helvetica', sans-serif;
+}
+
+.matTag h1 {
+  font-family: 'Playball', 'Helvetica', sans-serif;
+}
+
+/*******************
+guarantee page
+*********************/
+.backgroundimgPromise {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/drafting.jpg');
+}
+
+/*******************
+background patterns
+*********************/
+.suit {
+  background-image: url('../img/grey_wash_wall/grey_wash_wall.png');
+}
+
+.mocha {
+  background-image: url('../img/dark_fish_skin/dark_fish_skin.png');
+}
+
+.linen {
+  background-image: url('../img/low_contrast_linen/low_contrast_linen.png');
+}
+
+.mooning {
+  background-image: url("../img/mooning/mooning.png");
+}
+
+.midgrey {
+  background-image: url("../img/mochaGrunge/mochaGrunge.png");
+}
+
+.concrete {
+  background-image: url("../img/concrete_wall.png");
+}
+
+.darkWood {
+  background-image: url("../img/dark_wood/dark_wood.png");
+}
+
+.subtleDark {
+  background-image: url("../img/dvsup/dvsup.png");
+}
+
+.darkWoodRed {
+	background-image: url("../img/dark_woodred-1.jpg");
+}
+
+.purtyWood {
+	background-image: url('../img/purty_wood/purty_wood_@2X.png');
+}
+
+.woodLight {
+	background-image: url("../img/wood_1_@2Xlight.jpg");
+}
+
+.blackMamba {
+  background-image: url("../img/blackmamba/blackmamba.png");
+}
+
+
+/********************
+background image other pages
+***********************/
+
+.backgroundimage {
+  background-position: top;
+  background-size: 20%;
+  background-image: url("../img/wood_1_@2Xlight.jpg");
+  width: 100%;
+}
+
+.mat-copy p {
+  font-size: 1.4vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
+  .mat-copy p {
+    font-size: 1.7em;
+  }
+}
+
+.promise {
+  color: #eee;
+}
+
+.promise p {
+  margin: 4% 10%;
+  font-size: 2vw;
+}
+
+@media (max-width: 990px) {
+  .promise p {
+    font-size: 1.5em;
+  }
+}

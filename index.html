@@ -11,18 +11,12 @@
   <meta name="viewport" content="width=device-width">
   
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css"\>
-  <link rel="stylesheet" href="css/icomoon-social.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato|Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body ng-show="true" class="animate-body">
+<body ng-show="true" class="animate-body tk-adobe-caslon-pro">
   <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -39,17 +33,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a ng-click="home()" class="navbar-brand" href="#/"><strong><span class="first-name">Matt</span> <span class="last-name"> Morris</span></strong></a>
+        <a ng-click="home()" class="navbar-brand" href="#/"><strong><span class="first-name tk-adobe-caslon-pro">Matt</span> <span class="last-name tk-adobe-caslon-pro"> Morris</span></strong></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="home">
         <ul class="nav navbar-nav navbar-right">
           <li class="main-link" ng-click="home()"><a href="#/">Home</a></li>
-          <li  class="home-links"><a href="" smooth-scroll-jquery target="skills" offset="30" speed="1000">Skills</a></li>
-          <li class="home-links"><a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000">Portfilio</a></li>
-          <li class="home-links"><a href="" smooth-scroll-jquery target="recs" offset="30" speed="1000">Recommendations</a></li>
-          <li class="home-links"><a href="" smooth-scroll-jquery target="about" offset="55" speed="1000">About Me</a></li>
+          <li  class="home-links"><a href="" smooth-scroll-jquery target="skills" offset="30" speed="1000"><span class="tk-adobe-caslon-pro">Skills</span></a></li>
+          <li class="home-links"><a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000"><span class="tk-adobe-caslon-pro">Portfilio</span></a></li>
+<!--          <li class="home-links"><a href="" smooth-scroll-jquery target="recs" offset="30" speed="1000">Recommendations</a></li>-->
+          <li class="home-links"><a href="" smooth-scroll-jquery target="about" offset="55" speed="1000"><span class="tk-adobe-caslon-pro">About Me</span></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -62,30 +56,22 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-footer col-md-3 col-xs-6">
+        <div class="col-footer col-md-offset-2 col-md-3 col-xs-12">
           <h3>My Latest Work</h3>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <a href="page-portfolio-item.html"><img src="img/project_screenshots/calendar_directives.PNG" alt="Project Name"></a>
+          <div class="portfolio-item footer-item">
+            <div class="portfolio-image footer-image">
+              <a href="#/portfolio_items/calendar/data"><img src="img/project_screenshots/calendar_directives.PNG" alt="Project Name"></a>
             </div>
           </div>
         </div>
-        <div class="col-footer col-md-3 col-xs-6">
-          <h3>Navigate</h3>
-          <ul class="no-list-style footer-navigate-section">
-            <li><a href="page-portfolio-3-columns-2.html">Portfolio</a></li>
-            <li><a href="page-skills-3-columns.html">Skills</a></li>
-            <li><a href="page-about-us.html">About Me</a></li>
-            <li><a href="page-testimonials-clients.html">Recommendations</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-footer col-md-4 col-xs-6">
           <h3>Contact Me</h3>
           <p class="contact-us-details">
             <b>Location:</b> Dallas, TX<br/>
             <b>Phone:</b> (817) 498 8626<br/>
-            <b>Email:</b> <a href="mailto:Matthew.Cameron.Morris@gmail.com">Matthew.Cameron.Morris@gmail.com</a>
+            <b>Email:</b> <a href="mailto:matt.morris.dev@gmail.com">matt.morris.dev@gmail.com</a>
           </p>
         </div>
         <div class="col-footer col-md-2 col-xs-6">
@@ -108,16 +94,15 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://use.typekit.net/yjx3xay.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
   <script src="js/ui-bootstrap-tpls-0.14.3.js"></script>
-  <script src="js/jquery.sequence-min.js"></script>
-  <script src="js/jquery.bxslider.js"></script>
   <script src="js/SmoothScroll.js"></script>
   <script src="js/main-menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="js/sequence.module.js"></script>
   <script src="js/animations.module.js"></script>
   <script src="bower_components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js"></script>
   <script src="js/spirit.js"></script>

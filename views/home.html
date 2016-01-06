@@ -24,13 +24,13 @@
   <div class="container">
     <div class="row">
       <h2 class="skills-heading">My Skills</h2>
-      <hr>
+      <hr class="topHr">
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
           <img src="img/logos/css3-logo-min-shadow.png" alt="skills 1">
           <div class="skills-text">
             <h3>CSS3, Bootstrap, &amp; SASS</h3>
-            <p>Ability to create responsive and attractive websites from scratch or with the help of Bootstrap templates and styling options to add professional aesthetics quickly. </p>
+            <p class="tk-soleil">Ability to create responsive and attractive websites from scratch or with the help of Bootstrap templates and styling options to add professional aesthetics quickly. </p>
           </div>
 <!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
@@ -38,9 +38,9 @@
       <div class="col-md-3 col-sm-6">
         <div class="skills-wrapper">
           <img src="img/logos/angular-js-min-shadow.png" alt="skills 2">
-          <div class="skills-text">
+          <div class="skills-text tk-adobe-caslon-pro">
             <h3>Javascript &amp; JS Frameworks</h3>
-            <p>Experience and understanding of Javascript, Angular, and JQuery, as well as how to take advantage of them to integrate APIs and enhance usibility.</p>
+            <p class="tk-soleil">Experience and understanding of Javascript, Angular, and JQuery, as well as how to take advantage of them to integrate APIs and enhance usibility.</p>
           </div>
 <!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
         </div>
@@ -50,7 +50,7 @@
           <img src="img/logos/HTML5_logo-min-shadow.png" alt="skills 3">
           <div class="skills-text">
             <h3>HTML &amp; HTML5</h3>
-            <p>Mastery of the unique challenges and opportunities that HTML5 has to offer to create readable, semantic code which graceful transitions backward in older browsers.</p>
+            <p class="tk-soleil">Mastery of the unique challenges and opportunities that HTML5 has to offer to create readable, semantic code which graceful transitions backward in older browsers.</p>
           </div>
 <!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
@@ -60,7 +60,7 @@
           <img src="img/logos/Git_icon.svg-min-shadow.png" alt="skills 3">
           <div class="skills-text">
             <h3>Version Control &amp; Testing</h3>
-            <p>Well versed in using Git/Github to as well as Protractor end to end and Karma unit testing to provide protection and documentation for projects.</p>
+            <p class="tk-soleil">Well versed in using Git/Github as version control as well as Protractor end to end and Karma unit testing to provide protection and documentation for projects.</p>
           </div>
 <!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
         </div>
@@ -68,20 +68,21 @@
     </div>
   </div>
 </div>
+<hr class="bottomHr">
 <!-- End skills -->
 
-<div class="section portfolio-section">
+<div>
   <div class="container-fluid">
    <div class="row filter-container">
      <div class="col-md-12" id="portfolio">
-        <h2>Portfolio</h2>
+       <h2 class="tk-soleil">Portfolio</h2>
         <h3>Select a project type to filter the view.</h3>
       </div>
       <div class="clearfix"></div>
       <ul class="filter">
 
-        <li class="col-md-2 col-md-offset-1"><a href="" ng-click="filter = 'all'"><i class="fa fa-circle-o"></i>  All</a></li>
-        <li class="col-md-2"><a href="" ng-click="filter = 'CSS'"><i class="fa fa-pencil"></i>  CSS</a></li>
+        <li class="col-md-2 col-md-offset-1"><a href="" ng-click="filter = 'all'; hideItems()"><i class="fa fa-circle-o"></i>  All</a></li>
+        <li class="col-md-2"><a href="" ng-click="filter = 'CSS';"><i class="fa fa-pencil"></i>  CSS</a></li>
         <li class="col-md-2"><a href="" ng-click="filter = 'API'"><i class="fa fa-server"></i>  APIs</a></li>
         <li class="col-md-2"><a href="" ng-click="filter = 'data'"><i class="fa fa-database"></i>  Data Manipulation</a></li>
         <li class="col-md-2"><a href="" ng-click="filter = 'JS'"><i class="fa fa-coffee"></i>  JavaScript</a></li>
@@ -115,52 +116,15 @@
   </div>
 </div>
 
-<!-- Testimonials-->
-<!-- Homepage Slider -->
-<div class="homepage-slider" id="recs">
-  <sequence id="sequence" pages="true" auto-play="true" animate-starting-frame-in="true">
-    <ul class="sequence-canvas" id="testimonial">
-      <!-- Slide 1 -->
-      <li class="bg9">
-        <!-- Slide Title -->
-        <h2 class="title">Matt made my site look nice.</h2>
-        <!-- Slide Text -->
-        <h3 class="subtitle">Brandon</h3>
-      </li>
-      <!-- End Slide 1 -->
-      <!-- Slide 2 -->
-      <li class="bg9">
-        <!-- Slide Title -->
-        <h2 class="title">Matt can do cool things with a computer.</h2>
-        <!-- Slide Text -->
-        <h3 class="subtitle">Jeremy</h3>
-      </li>
-      <!-- End Slide 2 -->
-      <!-- Slide 3 -->
-      <li class="bg9">
-        <!-- Slide Title -->
-        <h2 class="title">Matt is pretty neat.</h2>
-        <!-- Slide Text -->
-        <h3 class="subtitle">Marius </h3>
-      </li>
-      <!-- End Slide 3 -->
-    </ul>
-    <div class="sequence-pagination-wrapper">
-      <ul class="sequence-pagination">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
-    </div>
-  </sequence>
-</div>
-<!-- End Homepage Slider -->
-<div ng-controller="canvasController" id="about">
-  <canvas id="main-canvas"></canvas>
+
+<div id="about">
+<!--  <canvas id="main-canvas"></canvas>-->
   <div class="heading" id="canvas-text">
-    <h2>Front-end Developer</h2>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos debitis iusto, iure, voluptates vitae eaque recusandae sint. Quaerat dignissimos, ipsa sapiente fugiat iusto est officiis quia! Beatae, neque! Quod, enim.</h4>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos debitis iusto, iure, voluptates vitae eaque recusandae sint. Quaerat dignissimos, ipsa sapiente fugiat iusto est officiis quia! Beatae, neque! Quod, enim.</h4>
+
+    <p class="about-text">Hi, my name is Matt and I love working on websites. I have learned a great deal about working in the front-end through the Thinkful front-end career course and various other online resources. Throughout my learning, I have proven myself to be an adept learner and able to quickly use new knowledge for practical results. I love working in the front-end and particularly enjoy using the AngularJS framework.
+    </p>
+  
     <img class="splash-img" src="img/profile_picture.jpg">
+    <div class="clearfix"></div>
   </div>
 </div>

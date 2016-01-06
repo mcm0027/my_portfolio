@@ -1,0 +1,110 @@
+/***********
+all pages
+****************/
+
+@media screen and (max-width: 992px) {
+
+#logo h1 {
+	margin: 0;
+	font-size: 3em;
+	padding: 0;
+}
+
+nav {
+	z-index: -1;
+	background-image: url("../img/mooning/mooning.png");
+	border-bottom: 6px double #333;
+	border-top: 2px solid #333;
+	font-size: 1.3em;
+	letter-spacing: .12em
+}
+nav li {
+	padding: 0 6px;
+}
+}
+
+@media screen and (min-width: 992px) {
+
+header {
+	border-bottom: 6px double #333;
+}
+
+nav {
+	text-align: right;
+}
+nav ul {
+	padding: 30px 30px 0 0;
+}
+}
+
+/***************
+home page
+***************/
+@media screen and (min-width: 992px) {
+
+#tag h1 {
+	font-size: 3em;
+}
+
+#tag h2 {
+	font-size: 2.5em;
+}
+}
+
+/***************
+contact page
+***************/
+@media screen and (max-width: 992px) {
+
+.contactcopy {
+	width: 80%;
+	margin: 10px 10%;
+}
+
+.contactcopy p {
+	font-size: 1.2em;
+}
+
+.contactcopy h3 {
+	font-size: 1.2em;
+}
+
+.icon-contact {
+	font-size: 1.2em;
+	background-size: 20px;
+	padding-right: 30px; 
+}
+
+#formpage form {
+	width: 76%;
+	margin: 10px 12%;
+}
+}
+
+
+/***********
+gallery page
+***********/
+
+@media screen and (min-width: 992px) {
+
+#gallery li {
+  width: 19%;
+  display: inline-block;
+  margin: 2% 4% 2% 1%;
+}
+}
+
+
+/***********
+material page
+***********/
+
+@media screen and (min-width: 992px) {
+
+.matslide1 img {
+  width: 70%;
+  margin: 15%;
+}
+}
+

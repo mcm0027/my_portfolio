@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset='UTF-8'>
+  <title>Contacts Map</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="./js/libs/underscore.js"></script>
+  <script src="http://momentjs.com/downloads/moment.js"></script>
+  <script src="http://momentjs.com/downloads/moment-timezone-with-data-2010-2020.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="./js/app.js"></script>
+</head>
+
+<body ng-app="myApp">
+  <section ng-controller="mapController">
+    <div class="container">
+      <h1>Contact Display Map</h1>
+      <section class="row">
+
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Contact's Time Now</th>
+                <th>Next Meeting My Time</th>
+                <th>Next Meeting Contact's Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="result in user | orderBy: 'name'">
+                <td><a href="">{{result.name}}</a></td>
+                <td>{{result.location}}</td>
+                <td>{{result.time}}</td>
+                <td>{{result.meetingTime}}</td>
+                <td>{{result.contactMeetingTime}}</td>
+
+              </tr>
+            </tbody>
+          </table>
+          <div class="buttons-container">
+            <button ng-click="setUser('Luke')">Luke Cage</button>
+            <button ng-click="setUser('Linda')">Linda Carter</button>
+          </div>
+        </div>
+        <section class="row">
+          <div class="col-md-12">
+            <div id="googleMap" style="width:90%;height:500px;"></div>
+
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+</body>
+
+</html>

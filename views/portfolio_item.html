@@ -10,7 +10,7 @@
     <div class="row" ng-repeat="project in projects" ng-show="item === '{{project.id}}'">
       <!-- Image Column -->
       <div class="col-sm-6">
-        <div class="portfolio-item">
+        <div class="portfolio-item single-item">
           <div class="portfolio-image">
             <a href="#"><img id="main" ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
           </div>
@@ -20,25 +20,25 @@
       <!-- Project Info Column -->
       <div class="portfolio-item-description col-sm-6">
         <h3>{{project.title}}</h3>
-        <p> {{project.description1}}
+        <p class="tk-soleil"> {{project.description1}}
         </p>
-        <p> {{project.description2}}
+        <p class="tk-soleil"> {{project.description2}}
         </p>
         <ul class="no-list-style">
-          <li><b>Date:</b> 01, September 2012 - 23, February 2013</li>
-          <li><b>Technologies:</b> HTML5, CSS3, jQuery, PHP, MySQL</li>
-          <li class="portfolio-visit-btn"><a href="#" class="btn">Visit Website</a></li>
+          <li><b>Date:</b> {{project.date}}</li>
+          <li><b>Technologies:</b> {{project.shortTech}}</li>
+          <li class="portfolio-visit-btn"><a ng-href="./sites/{{project.siteName}}" class="btn">Visit Website</a></li>
         </ul>
       </div>
       <!-- End Project Info Column -->
     </div>
     <!-- Related Projects -->
-    <h3>Related Projects</h3>
+    <h3 class="related-heading">Related Projects</h3>
     <div class="row">
     <ul class="related-list">
       <li ng-repeat="project in projects" ng-show="type === '{{project.type}}' && item !== '{{project.id}}'">
         <div class="col-md-4 col-sm-6">
-          <div class="portfolio-item">
+          <div class="portfolio-item related-item">
             <div class="portfolio-image">
               <a href="#"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
             </div>
