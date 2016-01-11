@@ -9,20 +9,20 @@
   <title>Matt Morris - Front End Web Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Lato:300|Playfair+Display:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main-min.css">
 </head>
-<body ng-show="true" class="animate-body tk-adobe-caslon-pro">
+
+<body ng-show="true" class="animate-body">
   <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 
   <!-- Navigation
 ==========================================-->
+ 
   <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top" ng-controller="navController">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,24 +33,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a ng-click="home()" class="navbar-brand" href="#/"><strong><span class="first-name tk-adobe-caslon-pro">Matt</span> <span class="last-name tk-adobe-caslon-pro"> Morris</span></strong></a>
+        <a ng-click="home()" class="navbar-brand" href="#/"><strong>Matt Morris</strong></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="home">
         <ul class="nav navbar-nav navbar-right">
-          <li class="main-link" ng-click="home()"><a href="#/">Home</a></li>
-          <li  class="home-links"><a href="" smooth-scroll-jquery target="skills" offset="30" speed="1000"><span class="tk-adobe-caslon-pro">Skills</span></a></li>
-          <li class="home-links"><a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000"><span class="tk-adobe-caslon-pro">Portfilio</span></a></li>
+<!--          <li class="main-link" ng-click="home()"><a ng-click="home()" href="">Home</a></li>-->
+          <li  class="home-links"><a  ng-click="hideNav()" href="" smooth-scroll-jquery target="skills" offset="50" speed="1000">Skills</a></li>
+          <li class="home-links"><a ng-click="hideNav()" href="" smooth-scroll-jquery target="portfolio" offset="50" speed="1000">Portfilio</a></li>
 <!--          <li class="home-links"><a href="" smooth-scroll-jquery target="recs" offset="30" speed="1000">Recommendations</a></li>-->
-          <li class="home-links"><a href="" smooth-scroll-jquery target="about" offset="55" speed="1000"><span class="tk-adobe-caslon-pro">About Me</span></a></li>
+          <li class="home-links"><a ng-click="hideNav()" href="" smooth-scroll-jquery target="about" offset="50" speed="1000">About Me</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
 
-  <div ng-view></div>
+  <div ng-view autoscroll="true"></div>
 
   <!-- Footer -->
   <div class="footer">
@@ -77,8 +77,9 @@
         <div class="col-footer col-md-2 col-xs-6">
           <h3>Connect</h3>
           <ul class="footer-stay-connected no-list-style">
-            <li><a href="#" class="github"></a></li>
-            <li><a href="https://www.linkedin.com/in/matt-morris-96322b73" class="linkedin"></a></li>
+            <li><a href="https://github.com/mcm0027" class="github"><img class="github-white" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABFJREFUeNpjYBgFo2AU0AsAAANwAAFHM3wcAAAAAElFTkSuQmCC"></a></li>
+            <li><a href="https://www.linkedin.com/in/matt-morris-96322b73" class="linkedin"><img class="linkedin" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABFJREFUeNpjYBgFo2AU0AsAAANwAAFHM3wcAAAAAElFTkSuQmCC">
+              </a></li>
           </ul>
         </div>
       </div>
@@ -91,22 +92,19 @@
   </div>
 
   <!-- Javascripts -->
+  <script src="src/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="https://use.typekit.net/yjx3xay.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
-  <script src="js/ui-bootstrap-tpls-0.14.3.js"></script>
-  <script src="js/SmoothScroll.js"></script>
-  <script src="js/main-menu.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="js/animations.module.js"></script>
+  <script src="https://code.angularjs.org/1.4.8/angular-touch.min.js"></script>
+  <script src="src/js/ui-bootstrap-tpls-0.14.3.js"></script>
+  <script src="src/js/main-menu.js"></script>
+  <script src="src/js/animations.module.js"></script>
   <script src="bower_components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js"></script>
-  <script src="js/spirit.js"></script>
-  <script src="app.js"></script>
-
+  <script src="src/js/spirit.js"></script>
+  <script src="src/js/app.js"></script>
 </body>
 </html>

@@ -7,12 +7,18 @@
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/mcm0027/my_portfolio",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-smoothscroll": "~1.1.1",
+    "ngSmoothScroll": "~2.0.0",
+    "angular-velocity": "~0.3.2",
+    "velocity": "~1.2.3"
+  }
 }

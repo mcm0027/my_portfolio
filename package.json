@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "**mPurpose** is a free multipurpose Twitter Bootstrap 3 template by [http://www.dragdropsite.com](http://www.dragdropsite.com)",
+  "main": "gulp.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcm0027/my_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcm0027/my_portfolio/issues"
+  },
+  "homepage": "https://github.com/mcm0027/my_portfolio#readme"
+}

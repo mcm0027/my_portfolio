@@ -5,14 +5,14 @@
   </div>
 </div>
 
-<div class="section">
+<div class="section item-page">
   <div class="container">
     <div class="row" ng-repeat="project in projects" ng-show="item === '{{project.id}}'">
       <!-- Image Column -->
       <div class="col-sm-6">
         <div class="portfolio-item single-item">
           <div class="portfolio-image">
-            <a href="#"><img id="main" ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+            <a ng-click="" ng-href="./sites/{{project.siteName}}"><img ng-click="" id="main" ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
           </div>
         </div>
       </div>
@@ -20,9 +20,9 @@
       <!-- Project Info Column -->
       <div class="portfolio-item-description col-sm-6">
         <h3>{{project.title}}</h3>
-        <p class="tk-soleil"> {{project.description1}}
+        <p> {{project.description1}}
         </p>
-        <p class="tk-soleil"> {{project.description2}}
+        <p> {{project.description2}}
         </p>
         <ul class="no-list-style">
           <li><b>Date:</b> {{project.date}}</li>
@@ -47,7 +47,7 @@
                 <li class="portfolio-project-name">{{project.title}}</li>
                 <li>{{project.shortTech}}</li>
 <!--                <li>Client: Some Client LTD</li>-->
-                <li class="read-more"><a smooth-scroll-jquery target="tf-menu" offset="600" speed="1000" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
+                <li class="read-more"><a ng-click="scroll(); buttonHide(project.id, project.type)" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
               </ul>
             </div>
           </div>
@@ -56,5 +56,28 @@
     </ul>
     </div>
     <!-- End Related Projects -->
+    <h3 class="related-heading">Other Projects</h3>
+    <div class="row">
+      <ul class="related-list">
+        <li ng-repeat="project in projects" ng-show="type !== '{{project.type}}' && item !== '{{project.id}}'">
+          <div class="col-md-4 col-sm-6">
+            <div class="portfolio-item related-item">
+              <div class="portfolio-image">
+                <a href="#"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+              </div>
+              <div class="portfolio-info-fade">
+                <ul>
+                  <li class="portfolio-project-name">{{project.title}}</li>
+                  <li>{{project.shortTech}}</li>
+                  <!--                <li>Client: Some Client LTD</li>-->
+                  <li  class="read-more"><a ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" ng-click="scroll(); buttonHide(project.id, project.type)" class="btn">Read more</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
   </div>
 </div>

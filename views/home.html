@@ -1,12 +1,11 @@
 <!-- Top Border -->
 <div class="section section-breadcrumbs">
-  <div class="container">
-  </div>
+
 </div>
 
 <!-- Bootstrap Portfolio Carousel-->
 <div class="carousel-container">
-  <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+  <uib-carousel interval="myInterval" no-wrap="noWrapSlides" ng-swipe-left="next()" ng-swipe-right="prev()">
     <uib-slide ng-repeat="slide in slides" active="slide.active">
       <a href="" smooth-scroll-jquery target="portfolio" offset="30" speed="1000" ng-click="setId(slide.id)">
         <img id="slide-image" ng-src="{{slide.image}}" style="margin:auto;">
@@ -20,62 +19,87 @@
 </div>
 
 <!-- Skills -->
-<div class="section" id="skills">
-  <div class="container">
+<div id="skills">
+  <div class="row heading-container" id="skills-header">
+    <div class="col-md-12">
+      <h2>My Skills</h2>
+      <h3>Select a category to read more.</h3>
+    </div>
+  </div>
+  <div class="skills-home">
     <div class="row">
-      <h2 class="skills-heading">My Skills</h2>
-      <hr class="topHr">
-      <div class="col-md-3 col-sm-6">
-        <div class="skills-wrapper">
-          <img src="img/logos/css3-logo-min-shadow.png" alt="skills 1">
-          <div class="skills-text">
-            <h3>CSS3, Bootstrap, &amp; SASS</h3>
-            <p class="tk-soleil">Ability to create responsive and attractive websites from scratch or with the help of Bootstrap templates and styling options to add professional aesthetics quickly. </p>
+      <a data-toggle="modal" data-target="#css">
+        <div class="col-md-3 col-sm-6">
+          <div class="skills-wrapper css-wrapper">
+            <img class="css3-logo-min-shadow" alt="skills 1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADcAQMAAAAP0XxQAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABxJREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAMBvFlgAAZlquSoAAAAASUVORK5CYII=">
+            <div class="skills-text">
+              <h3>CSS3 &amp; Bootstrap</h3>
+            </div>
           </div>
-<!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skills-wrapper">
-          <img src="img/logos/angular-js-min-shadow.png" alt="skills 2">
-          <div class="skills-text tk-adobe-caslon-pro">
-            <h3>Javascript &amp; JS Frameworks</h3>
-            <p class="tk-soleil">Experience and understanding of Javascript, Angular, and JQuery, as well as how to take advantage of them to integrate APIs and enhance usibility.</p>
+      </a>
+      <a data-toggle="modal" data-target="#javascript">
+        <div class="col-md-3 col-sm-6">
+          <div class="skills-wrapper js-wrapper">
+            <img class="angular-js-min-shadow" alt="skills 2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADcAQMAAAAP0XxQAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABxJREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAMBvFlgAAZlquSoAAAAASUVORK5CYII=">
+            <div class="skills-text">
+              <h3>JS &amp; AngularJS</h3>
+            </div>
           </div>
-<!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skills-wrapper">
-          <img src="img/logos/HTML5_logo-min-shadow.png" alt="skills 3">
-          <div class="skills-text">
-            <h3>HTML &amp; HTML5</h3>
-            <p class="tk-soleil">Mastery of the unique challenges and opportunities that HTML5 has to offer to create readable, semantic code which graceful transitions backward in older browsers.</p>
+      </a>
+      <a data-toggle="modal" data-target="#html">
+        <div class="col-md-3 col-sm-6">
+          <div class="skills-wrapper html-wrapper">
+            <img class="html5-logo-min-shadow" alt="skills 3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADcAQMAAAAP0XxQAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABxJREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAMBvFlgAAZlquSoAAAAASUVORK5CYII=">
+            <div class="skills-text">
+              <h3>HTML &amp; HTML5</h3>
+            </div>
           </div>
-<!--          <a href="#" class="btn"><i class="fa fa-circle"></i> Read more</a>-->
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="skills-wrapper">
-          <img src="img/logos/Git_icon.svg-min-shadow.png" alt="skills 3">
-          <div class="skills-text">
-            <h3>Version Control &amp; Testing</h3>
-            <p class="tk-soleil">Well versed in using Git/Github as version control as well as Protractor end to end and Karma unit testing to provide protection and documentation for projects.</p>
+      </a>
+      <a data-toggle="modal" data-target="#git">
+        <div class="col-md-3 col-sm-6">
+          <div class="skills-wrapper git-wrapper">
+            <img class="git-icon-svg-min-shadow" alt="skills 3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADcAQMAAAAP0XxQAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABxJREFUeNrtwYEAAAAAw6D5U1/hAFUBAAAAAMBvFlgAAZlquSoAAAAASUVORK5CYII=">
+            <div class="skills-text">
+              <h3>GitHub &amp; Testing</h3>
+            </div>
           </div>
-<!--          <a href="#" class="btn"><i class="fa fa-circle-o"></i> Read more</a>-->
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- End skills -->
+
+<!-- Modal -->
+<div ng-repeat="skill in skills">
+  <div class="modal fade" ng-attr-id={{skill.id}} tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">{{skill.title}}</h4>
+        </div>
+        <div class="modal-body">
+          {{skill.description}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<hr class="bottomHr">
-<!-- End skills -->
 
-<div>
+
+<div class="portfolio-container">
   <div class="container-fluid">
-   <div class="row filter-container">
-     <div class="col-md-12" id="portfolio">
-       <h2 class="tk-soleil">Portfolio</h2>
+    <div class="row heading-container" id="portfolio-header">
+      <div class="col-md-12" id="portfolio">
+        <h2>Portfolio</h2>
         <h3>Select a project type to filter the view.</h3>
       </div>
       <div class="clearfix"></div>
@@ -96,16 +120,16 @@
       <ul class="portfolio-list">
         <li ng-repeat="project in projects">
           <!-- Item 1 -->
-          <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col-md-4 col-sm-6 animate-filter">
+          <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col-md-4 col-sm-6r animate-filter">
             <div class="portfolio-item">
               <div class="portfolio-image">
-                <a ng-click="paths()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+                <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
               </div>
               <div class="portfolio-info">
                 <ul>
                   <li class="portfolio-project-name"><strong>{{project.title}}</strong></li>
                   <li>{{project.shortTech}}</li>
-                  <li class="read-more"><a ng-click="paths()" ng-href="#/portfolio_items/{{project.id}}/{{project.type}}" class="btn">Read more</a></li>
+                  <li class="read-more"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>
                 </ul>
               </div>
             </div>
@@ -118,12 +142,17 @@
 
 
 <div id="about">
-<!--  <canvas id="main-canvas"></canvas>-->
+  <div class="row heading-container" id="about-header">
+    <div class="col-md-12">
+      <h2>About Me</h2>
+    </div>
+  </div>
+  <!--  <canvas id="main-canvas"></canvas>-->
   <div class="heading" id="canvas-text">
 
-    <p class="about-text">Hi, my name is Matt and I love working on websites. I have learned a great deal about working in the front-end through the Thinkful front-end career course and various other online resources. Throughout my learning, I have proven myself to be an adept learner and able to quickly use new knowledge for practical results. I love working in the front-end and particularly enjoy using the AngularJS framework.
+    <p class="about-text">Hi, my name is Matt and I love working on websites. I have learned a great deal about working in the front-end through the Thinkful front-end career course and various other online resources. I have proven myself to be an adept learner and able to quickly use new knowledge for practical results. I love working in the front-end and particularly enjoy using the AngularJS framework.
     </p>
-  
+
     <img class="splash-img" src="img/profile_picture.jpg">
     <div class="clearfix"></div>
   </div>
